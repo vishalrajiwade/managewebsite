@@ -1,0 +1,25 @@
+* {
+   box-sizing: border-box;
+   margin: 0%;
+   padding: 0;
+
+}
+
+body {
+   font-family: 'Be Vietnam', sans-serif;
+   font-size: 62.5%;
+   
+   
+}
+
+.current {
+   color: $dark-blue !important;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}

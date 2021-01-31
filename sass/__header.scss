@@ -1,0 +1,324 @@
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem 6rem 0 ;
+
+   &__logo {
+     cursor: pointer;
+   }
+
+   &__nav {
+      display: flex;
+
+      &__item {
+
+         a {
+            color: $dark-grayish-blue;
+            font-weight: 700;
+         }
+         
+         &:not(:last-child) {
+            margin-right: 1.3rem;
+         }
+
+         
+      }
+   }
+
+}
+
+
+.hero {
+   
+   display: flex;
+   padding: 10rem 6rem 5rem 6rem;
+
+   &__left-col {
+      
+      margin-right: auto;
+   }
+
+   &__heading {
+      font-size: 2.3rem;
+      width: 20rem;
+      font-weight: 700;
+      width: 20rem;
+      color: hsl(228, 39%, 23%);
+      line-height: 1.2;
+
+   }
+
+   &__desc {
+      width: 15rem;
+      margin: 2rem 0;
+      color: $dark-grayish-blue;
+      font-size: .7rem;
+   }
+
+   &__illustration {
+      margin-top: -3rem;
+      width: 50%;
+      height: 50%rem;
+
+   
+   }
+}
+
+// Features section 
+
+.feature {
+   padding: 7rem 6rem;
+   display: flex;
+   background-color: $bright-red;
+   color: white;
+   position: relative;
+
+   &::before {
+      content: "";
+      background-image: url(../images/bg-tablet-pattern.svg);
+      opacity: 0.1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    
+      
+   }
+
+   &__left {
+      width: 20rem;
+
+      &__desc {
+        
+      width: 15rem;
+      margin-top: 1.5rem;
+      color: $very-light-gray;
+      font-size: .7rem;
+
+      }
+   }
+
+   &__heading {
+      font-size: 1.8rem;
+      font-weight: 700;
+      width: 20rem;
+      color: hsl(228, 39%, 23%);
+      line-height: 1.2;
+   }
+
+  
+
+   &__right {
+      margin-left: auto;
+
+      &__item {
+         display: flex;
+         justify-content: flex-start;
+         align-items: flex-start;
+         height: 1.4rem;
+
+      }
+
+      &__desc {
+         width: 20rem;
+         color: $very-light-gray;
+         font-size: .7rem;
+         margin-left: 5.2rem;
+         margin-right: 2rem;
+
+         &:not(:last-child) {
+            margin-bottom: 2rem;
+         }
+      }
+   }
+
+   &__button {
+      padding: .5rem 1.3rem ;
+      font-size: 1rem;
+      margin-right: 1.5rem;
+      background-color: $very-light-gray;
+      border-radius: 30px;
+      font-weight: 700;
+   }
+
+}
+
+
+.testimonials {
+   text-align: center;
+   padding: 7rem 6rem;
+
+   &__heading {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align: center;
+      color: hsl(228, 39%, 23%);
+      line-height: 1.2;
+      margin-bottom: 5rem;
+   }
+
+   &__box {
+
+      display: flex;
+      text-align: center;
+      margin-bottom: 3rem;
+
+      :not(:last-child) {
+            margin-right: 2rem;
+      }
+      
+
+      &__item {
+         background-color: $dark-grayish-blue;
+         padding: 2rem 4rem;
+         border-radius: 10px;
+         position: relative;
+
+         .heading {
+            margin-right: 0;
+            margin: .7rem;
+         }
+
+         img {
+            position: absolute;
+            top: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 4rem;
+            width: 4rem;
+         }
+      }
+
+   
+   }
+}
+
+.extra {
+   background-color: $bright-red;
+   padding: 5rem 7rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+
+   &::before {
+      content: "";
+      background-image: url(../images/bg-tablet-pattern.svg);
+      opacity: 0.1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      
+ 
+   }
+
+   .button {
+      background-color: white;
+      padding: .5rem 1rem;
+      color: $bright-red;
+      border-radius: 30px;
+      font-weight: 700;
+   }
+
+   &__heading {
+      font-size: 1.8rem;
+      font-weight: 700;
+      width: 24rem;
+      color: white;
+      line-height: 1.2;
+   
+   }
+
+}
+
+
+.footer {
+   background-color: $dark-blue;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 7rem;
+
+   &__logo {
+     width: 9rem;
+     height: auto;
+      margin-bottom: 4rem;
+      cursor: pointer;
+   }
+}
+
+.box {
+   padding: 1rem .5rem;
+}
+
+.box1 {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   
+}
+
+.icon__box {
+   :not(:last-child) {
+      margin-right: .5rem;
+   }
+
+   img {
+      cursor: pointer;
+   }
+}
+
+.box2 {
+
+   padding: unset;
+
+   
+   li {
+      margin-bottom: 1rem;
+      margin-top: .2rem;
+   }
+
+   a {
+      color: $very-light-gray;
+   }
+}
+
+.box3 {
+    padding: unset;
+   margin-top: -2rem;
+
+   li {
+      margin-bottom: .8rem;
+      margin-top: .2rem;
+   }
+
+   a {
+      color: $very-light-gray;
+   }
+}
+
+.box4 {
+   
+   padding: unset;
+
+   input[type="text"] {
+      border: none;
+      margin-right: 1rem ;
+      border-radius: 20px;
+      padding: .5rem 1rem;
+      margin-bottom: 3rem;
+
+      &:focus {
+         outline: none;
+      }
+   }
+}
+
+.copy {
+   color: $very-light-gray ;
+}
